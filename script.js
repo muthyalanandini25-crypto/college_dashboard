@@ -1,16 +1,10 @@
 function login() {
-  let id = document.getElementById("studentId").value;
-  let pass = document.getElementById("password").value;
+  let id = document.getElementById("id").value;
+  let pass = document.getElementById("pass").value;
 
-  if (id === "student123" && pass === "1234") {
-    document.getElementById("msg").innerText = "Login Successful ✅";
-
-    // go to dashboard
-    setTimeout(() => {
-      window.location.href = "dashboard.html";
-    }, 1000);
-
+  if (id === "student" && pass === "1234") {
+    window.location.href = "dashboard.html";
   } else {
-    document.getElementById("msg").innerText = "Invalid ID or Password ❌";
+    document.getElementById("msg").innerText = "Invalid login ❌";
   }
 }
