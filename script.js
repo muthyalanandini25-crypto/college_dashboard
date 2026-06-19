@@ -7,7 +7,7 @@ function login(){
     document.getElementById("password").value;
 
     if(username === "Nandini" &&
-       password === "24AFAIMz081"){
+       password === "24AFAIM081"){
 
         document.getElementById("msg")
         .innerHTML = "Login Successful";
