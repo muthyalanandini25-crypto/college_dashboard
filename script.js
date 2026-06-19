@@ -1,14 +1,16 @@
-function login(){
+function login() {
+  let id = document.getElementById("studentId").value;
+  let pass = document.getElementById("password").value;
 
-let id=document.getElementById("studentid").value;
-let pass=document.getElementById("password").value;
+  if (id === "student123" && pass === "1234") {
+    document.getElementById("msg").innerText = "Login Successful ✅";
 
-if(id!=="" && pass!==""){
-alert("Login Successful");
-window.location.href="dashboard.html";
-}
-else{
-alert("Enter Student ID and Password");
-}
+    // go to dashboard
+    setTimeout(() => {
+      window.location.href = "dashboard.html";
+    }, 1000);
 
+  } else {
+    document.getElementById("msg").innerText = "Invalid ID or Password ❌";
+  }
 }
