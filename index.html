@@ -1,27 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Student Dashboard</title>
+    <title>College Dashboard</title>
 </head>
 <body>
 
-    <h1>Student Dashboard</h1>
+<h1>College Login</h1>
 
-    <h2>Student Details</h2>
+<input type="text" id="username" placeholder="Username"><br><br>
+<input type="password" id="password" placeholder="Password"><br><br>
 
-    <p><b>Name:</b> Nandini</p>
-    <p><b>Roll Number:</b> 12345</p>
-    <p><b>Department:</b> CSE</p>
-    <p><b>Year:</b> 3rd Year</p>
+<button onclick="login()">Login</button>
 
-    <h2>Academic Details</h2>
+<div id="dashboard" style="display:none;">
 
-    <p><b>Attendance:</b> 92%</p>
-    <p><b>Python:</b> 85 Marks</p>
-    <p><b>Java:</b> 88 Marks</p>
-    <p><b>DBMS:</b> 90 Marks</p>
+    <h2>Login Successful</h2>
 
-    <button>Logout</button>
+    <h3>Student Information</h3>
+    <p>Name: Nandini</p>
+    <p>Roll No: 12345</p>
+
+    <h3>Attendance</h3>
+    <p>92%</p>
+
+    <h3>Exam Notifications</h3>
+    <p>Python Exam - 25 June</p>
+    <p>Java Exam - 28 June</p>
+
+    <h3>Fee Details</h3>
+    <p>Fee Due: ₹5,000</p>
+
+    <h3>Class Schedule</h3>
+    <p>Monday - Python</p>
+    <p>Tuesday - Java</p>
+
+    <h3>Faculty Details</h3>
+    <p>Python Faculty: Mr. Kumar</p>
+    <p>Java Faculty: Mrs. Priya</p>
+
+</div>
+
+<script>
+function login() {
+    document.getElementById("dashboard").style.display = "block";
+}
+</script>
 
 </body>
 </html>
