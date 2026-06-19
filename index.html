@@ -1,40 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Annamacharya University</title>
+<title>Login</title>
+<link rel="stylesheet" href="style.css">
 </head>
+<body>
+<center>
+<img src="logo.png" width="120">
+<h1>ANNAMACHARYA UNIVERSITY</h1>
 
-<body style="text-align:center; font-family:Arial; margin-top:50px;">
+<input type="text" placeholder="Student ID"><br><br>
+<input type="password" placeholder="Password"><br><br>
 
-    <h1>🎓</h1>
-
-    <h1>Annamacharya University</h1>
-
-    <h3>Student Portal Login</h3>
-
-    <input type="text" id="id" placeholder="Student ID">
-    <br><br>
-
-    <input type="password" id="pass" placeholder="Password">
-    <br><br>
-
-    <button onclick="login()">Login</button>
-
-    <p id="msg"></p>
-
-    <script>
-        function login() {
-            let id = document.getElementById("id").value;
-            let pass = document.getElementById("pass").value;
-
-            if (id === "student" && pass === "1234") {
-                window.location.href = "dashboard.html";
-            } else {
-                document.getElementById("msg").innerHTML =
-                "Invalid Student ID or Password";
-            }
-        }
-    </script>
-
+<a href="dashboard.html">
+<button>Login</button>
+</a>
+</center>
 </body>
 </html>
